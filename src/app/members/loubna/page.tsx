@@ -1,11 +1,7 @@
-import React from 'react'
+import MemberPage from "@/components/team/MemberPage"
+import teamData from "@/lib/loubna"
 
-const page = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+export default function LoubnaPage() {
+  const member = teamData.loubna
+  return <MemberPage member={member} />
 }
-
-export default page
