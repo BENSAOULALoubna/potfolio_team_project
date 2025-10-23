@@ -5,7 +5,10 @@ import type React from "react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, X } from "lucide-react";
-import teamData, { type Member } from "../../lib/teamData";
+import { type Member } from "../../lib/teamData";
+import afafData from "../../lib/afaf";
+import belkeisData from "../../lib/belkeis";
+import raoufData from "../../lib/raouf";
 
 // Color gradients for each member (can be moved to individual member files later)
 const colorMap: Record<string, string> = {
@@ -14,6 +17,14 @@ const colorMap: Record<string, string> = {
   belkeis: "from-[#9614d0] to-[#660094]",
   ilyas: "from-[#660094] to-[#d16aff]",
   raouf: "from-[#d16aff] to-[#9614d0]",
+};
+
+// Combine individual member data
+const teamData: Record<string, Member> = {
+  afaf: afafData.afaf,
+  belkeis: belkeisData.belkeis,
+  raouf: raoufData.raouf,
+  // loubna and ilyas will be added when they push their files
 };
 
 // Transform teamData into the format needed for this component
@@ -191,9 +202,20 @@ export function TeamSection() {
                 <div
                   className={`h-40 bg-gradient-to-br ${member.color} flex items-center justify-center relative overflow-hidden`}
                 >
-                  <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
-                    {member.image}
-                  </div>
+                  {typeof member.image === "string" &&
+                  (member.image.startsWith("/") ||
+                    member.image.startsWith("http") ||
+                    member.image.includes("_next")) ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
+                      {member.image}
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
