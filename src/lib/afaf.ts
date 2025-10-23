@@ -179,4 +179,4 @@ const teamData: Record<string, Member> = {
   },
 };
 
-export default teamData;
+export default afaf;
