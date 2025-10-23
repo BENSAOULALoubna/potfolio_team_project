@@ -73,4 +73,4 @@ const teamData: Record<string, Member> = {
         social: { github: "https://github.com/ilyas-git275", linkedin: "#", email: "ilyas.aniour@ensia.edu.dz" },
     },
 };
-export default teamData;  
+export default ilyas;  
