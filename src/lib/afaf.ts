@@ -97,7 +97,12 @@ const teamData: Record<string, Member> = {
         title: "FitGenie Website",
         description:
           "A smart workout planning system that leverages AI search algorithms (such as A* and Hill Climbing) and Constraint Satisfaction Problem (CSP) techniques to generate personalized weekly workout routines based on user-defined constraints. The website is built with React for the frontend, while the Flask-based backend is currently under development.",
-        tech: ["React", "Flask", "AI Search"],
+        tech: [
+          "React",
+          "Flask",
+          "AI Search algorithms",
+          "Constraint Satisfaction Problem",
+        ],
         image: fitgenieImg.src,
         github: "https://github.com/AfafKhadraoui/AI_Project",
         status: "Completed",

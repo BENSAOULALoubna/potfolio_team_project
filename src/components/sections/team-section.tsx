@@ -9,6 +9,8 @@ import { type Member } from "../../lib/teamData";
 import afafData from "../../lib/afaf";
 import belkeisData from "../../lib/belkeis";
 import raoufData from "../../lib/raouf";
+import loubnaData from "../../lib/loubna";
+import ilyasData from "../../lib/ilyas";
 
 // Color gradients for each member (can be moved to individual member files later)
 const colorMap: Record<string, string> = {
@@ -21,10 +23,11 @@ const colorMap: Record<string, string> = {
 
 // Combine individual member data
 const teamData: Record<string, Member> = {
+  loubna: loubnaData.loubna,
   afaf: afafData.afaf,
   belkeis: belkeisData.belkeis,
+  ilyas: ilyasData.ilyas,
   raouf: raoufData.raouf,
-  // loubna and ilyas will be added when they push their files
 };
 
 // Transform teamData into the format needed for this component
