@@ -32,7 +32,7 @@ const teamData: Record<string, Member> = {
     bio: "Building intelligent systems through Machine Learning and Data Science.",
     fullBio:
     "Computer Science student passionate about building intelligent systems through Machine Learning and Data Science. I specialize in creating end-to-end solutions—from data preprocessing and model development to web deployment.",
-    image: "👨‍💻",
+    image: "",
     email: "raouf@ensia.ai",
     location: "Algiers, Algeria",
     skills: [
