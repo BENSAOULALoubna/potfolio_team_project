@@ -1,3 +1,5 @@
+import Belkeis from "../assets/belkeis.jpg";
+
 export type Project = {
   title: string
   description: string
@@ -32,8 +34,8 @@ const teamData: Record<string, Member> = {
   bio: "Turning ideas into intelligent systems through data, design, and innovation.",
   fullBio:
     "I'm an AI engineering student who loves creating smart, well-designed systems that make ideas come to life. I enjoy mixing logic with creativity — designing, coding, and improving things until they feel simple, intuitive, and meaningful",
-  image: "../assets/belkeis.jpg",
-  email: "belkeis@ensia.ai",
+  image: Belkeis.src,
+  email: "belkeis@ensia.edu.dz",
   location: "Algiers, Algeria",
   skills: [
     "Python",
