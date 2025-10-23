@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="font-bold text-lg gradient-text mb-4">
-              ENSIA AI Team
+              Software engineering  Team
             </h3>
             <p className="text-gray-400 text-sm">
               Building intelligent systems that solve real-world problems
