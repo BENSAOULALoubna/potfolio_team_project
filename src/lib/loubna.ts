@@ -1,3 +1,5 @@
+import project from "../assets/portfolio-website.jpg";
+
 export type Project = {
   title: string
   description: string
@@ -50,8 +52,8 @@ const teamData: Record<string, Member> = {
         description:
           "Modern portfolio website showcasing team projects and expertise with interactive animations and smooth user experience.",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-        image: "/portfolio-website-design.png",
-        link: "https://example.com",
+        image: project.src,
+        link: "https://github.com",
         github: "https://github.com",
         status: "Completed",
       }
