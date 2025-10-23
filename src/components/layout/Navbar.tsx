@@ -40,7 +40,7 @@ export function Navbar() {
               <span className="text-white font-bold text-sm">AI</span>
             </div>
             <span className="font-bold text-lg hidden sm:inline gradient-text">
-              ENSIA AI
+              ENSIA Students
             </span>
           </Link>
 

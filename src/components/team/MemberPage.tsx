@@ -12,6 +12,9 @@ import {
   Code2,
   Award,
   Briefcase,
+  Globe,
+  Phone,
+  Download,
 } from "lucide-react";
 import type { Member } from "@/lib/teamData";
 
@@ -33,20 +36,17 @@ export default function MemberPage({ member }: { member: Member }) {
             {/* Profile Card */}
             <aside className="w-full md:w-1/3 lg:w-96 flex-shrink-0">
               <div className="glass-dark rounded-2xl border border-[#d16aff]/20 overflow-hidden sticky top-24">
-                <div className="h-48 md:h-56 bg-gradient-to-br from-[#d16aff] to-[#bb44f0] flex items-center justify-center">
-                  {typeof member.image === "string" &&
-                  member.image.startsWith("/") ? (
-                    <div className="w-32 h-32 rounded-full overflow-hidden ring-4 ring-[#d16aff]/20">
-                      <Image
-                        src={member.image}
-                        alt={`${member.name} photo`}
-                        width={128}
-                        height={128}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
+                <div className="h-48 md:h-56 bg-gradient-to-br from-[#d16aff] to-[#bb44f0] overflow-hidden relative">
+                  {typeof member.image === "string" ? (
+                    <img
+                      src={member.image}
+                      alt={`${member.name} photo`}
+                      className="w-full h-full object-cover"
+                    />
                   ) : (
-                    <div className="text-7xl">{member.image}</div>
+                    <div className="w-full h-full flex items-center justify-center text-7xl">
+                      {member.image}
+                    </div>
                   )}
                 </div>
 
@@ -74,11 +74,14 @@ export default function MemberPage({ member }: { member: Member }) {
                     </div>
                   </div>
 
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {member.social.github && (
                       <a
                         href={member.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-2 bg-[#310047] hover:bg-[#d16aff] text-[#d16aff] hover:text-[#0a0a0a] rounded-lg transition-all duration-300 flex items-center justify-center"
+                        title="GitHub"
                       >
                         <Github size={16} />
                       </a>
@@ -86,12 +89,57 @@ export default function MemberPage({ member }: { member: Member }) {
                     {member.social.linkedin && (
                       <a
                         href={member.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-2 bg-[#310047] hover:bg-[#d16aff] text-[#d16aff] hover:text-[#0a0a0a] rounded-lg transition-all duration-300 flex items-center justify-center"
+                        title="LinkedIn"
                       >
                         <Linkedin size={16} />
                       </a>
                     )}
+                    {member.social.email && (
+                      <a
+                        href={`mailto:${member.social.email}`}
+                        className="p-2 bg-[#310047] hover:bg-[#d16aff] text-[#d16aff] hover:text-[#0a0a0a] rounded-lg transition-all duration-300 flex items-center justify-center"
+                        title="Email"
+                      >
+                        <Mail size={16} />
+                      </a>
+                    )}
+                    {member.social.website && (
+                      <a
+                        href={member.social.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-[#310047] hover:bg-[#d16aff] text-[#d16aff] hover:text-[#0a0a0a] rounded-lg transition-all duration-300 flex items-center justify-center"
+                        title="Website"
+                      >
+                        <Globe size={16} />
+                      </a>
+                    )}
+                    {member.social.phone && (
+                      <a
+                        href={`tel:${member.social.phone}`}
+                        className="p-2 bg-[#310047] hover:bg-[#d16aff] text-[#d16aff] hover:text-[#0a0a0a] rounded-lg transition-all duration-300 flex items-center justify-center"
+                        title="Phone"
+                      >
+                        <Phone size={16} />
+                      </a>
+                    )}
                   </div>
+
+                  {member.cv && (
+                    <a
+                      href={member.cv}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#d16aff] to-[#bb44f0] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#d16aff]/50 transition-all duration-300"
+                    >
+                      <Download size={18} />
+                      <span>Download CV</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </aside>

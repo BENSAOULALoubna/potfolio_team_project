@@ -1,5 +1,5 @@
 import MemberPage from "@/components/team/MemberPage";
-import teamData from "@/lib/teamData";
+import teamData from "@/lib/afaf";
 
 export default function AfafPage() {
   const member = teamData.afaf;

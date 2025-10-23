@@ -33,7 +33,7 @@ export function HeroSection() {
           <div className="animate-slide-in-left">
             <div className="inline-block mb-6 px-4 py-2 rounded-full bg-[#310047] border border-[#d16aff]">
               <span className="text-sm font-medium text-[#d16aff]">
-                Welcome to ENSIA AI
+                Welcome to Our Portfolio
               </span>
             </div>
 

@@ -23,7 +23,13 @@ export type Project = {
 
 export type Certification = { title: string; issuer: string; date: string };
 
-export type Social = { github?: string; linkedin?: string; email?: string };
+export type Social = {
+  github?: string;
+  linkedin?: string;
+  email?: string;
+  website?: string;
+  phone?: string;
+};
 
 export type Member = {
   name: string;
@@ -37,6 +43,7 @@ export type Member = {
   projects: Project[];
   certifications: Certification[];
   social: Social;
+  cv?: string;
 };
 
 // ========================================
