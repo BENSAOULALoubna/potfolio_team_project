@@ -5,7 +5,7 @@ import type React from "react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, X } from "lucide-react";
-//import { type Member } from "../../lib/teamData";
+import { type Member } from "../../lib/teamData";
 import afafData from "../../lib/afaf";
 import belkeisData from "../../lib/belkeis";
 import raoufData from "../../lib/raouf";
@@ -26,11 +26,11 @@ const colorMap: Record<string, string> = {
 
 // Combine individual member data
 const teamData: Record<string, Member> = {
-  loubna: loubnaData.loubna,
-  afaf: afafData.afaf,
-  belkeis: belkeisData.belkeis,
-  ilyas: ilyasData.ilyas,
-  raouf: raoufData.raouf,
+  loubna: loubnaData,
+  afaf: afafData,
+  belkeis: belkeisData,
+  ilyas: ilyasData,
+  raouf: raoufData,
 };
 
 // Transform teamData into the format needed for this component
