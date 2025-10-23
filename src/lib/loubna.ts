@@ -1,4 +1,5 @@
 import project from "../assets/portfolio-website.jpg";
+import loubna from "../assets/loubna.jpg";
 
 export type Project = {
   title: string
@@ -34,8 +35,8 @@ const teamData: Record<string, Member> = {
     role: "Team Lead & Full-Stack Developer",
     bio: "Passionate about building scalable web applications",
     fullBio:
-      "Passionate about building scalable web applications and leading innovative projects. With expertise in modern web technologies, Loubna brings vision and technical excellence to every project.",
-    image: "👩‍💼",
+      "I’m a 3rd-year Artificial Intelligence student at ENSIA, Algiers, driven by curiosity and a desire to turn ideas into intelligent, practical solutions. My work bridges design and logic — from building modern full-stack web applications to exploring AI, machine learning, and search algorithms that make technology more adaptive and human-centered",
+    image: loubna.src,
     email: "loubna.bensaoula@ensia.edu.dz",
     location: "Algiers, Annaba",
     skills: [
