@@ -16,7 +16,7 @@ The project demonstrates teamwork using Git, GitHub, and a feature-branch workfl
 
 ## 🌍 Live Website
 
-🔗 **Visit the website** *(Coming soon on GitHub Pages)*
+🔗 **Visit the website** *(https://potfolio-team-project.vercel.app)*
 
 ---
 
