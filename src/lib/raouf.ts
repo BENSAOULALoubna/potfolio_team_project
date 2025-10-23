@@ -63,4 +63,4 @@ const teamData: Record<string, Member> = {
     },
 }
 
-export default raouf
+export default teamData;

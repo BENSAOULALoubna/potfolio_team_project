@@ -80,4 +80,4 @@ const teamData: Record<string, Member> = {
 },
 
 }
-export default belkeis
+export default teamData;

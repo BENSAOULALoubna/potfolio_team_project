@@ -68,4 +68,4 @@ const teamData: Record<string, Member> = {
   },
 }
 
-export default loubna
+export default teamData;

@@ -26,11 +26,11 @@ const colorMap: Record<string, string> = {
 
 // Combine individual member data
 const teamData: Record<string, Member> = {
-  loubna: loubnaData,
-  afaf: afafData,
-  belkeis: belkeisData,
-  ilyas: ilyasData,
-  raouf: raoufData,
+  loubna: loubnaData.loubna,
+  afaf: afafData.afaf,
+  belkeis: belkeisData.belkeis,
+  ilyas: ilyasData.ilyas,
+  raouf: raoufData.raouf,
 };
 
 // Transform teamData into the format needed for this component
