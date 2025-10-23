@@ -12,15 +12,7 @@ import raoufData from "../../lib/raouf";
 import loubnaData from "../../lib/loubna";
 import ilyasData from "../../lib/ilyas";
 
-//added after deletion of teamData file 
-type Member = {
-  name: string;
-  role: string;
-  bio: string;
-  fullBio: string;
-  image: string | JSX.Element;
-  skills: string[];
-};
+
 
 
 // Color gradients for each member (can be moved to individual member files later)
