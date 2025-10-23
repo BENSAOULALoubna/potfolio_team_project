@@ -5,7 +5,7 @@ import type React from "react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, X } from "lucide-react";
-import { type Member } from "../../lib/teamData";
+//import { type Member } from "../../lib/teamData";
 import afafData from "../../lib/afaf";
 import belkeisData from "../../lib/belkeis";
 import raoufData from "../../lib/raouf";
