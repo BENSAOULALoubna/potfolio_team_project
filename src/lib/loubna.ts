@@ -64,7 +64,7 @@ const teamData: Record<string, Member> = {
       { title: "Advanced React Patterns", issuer: "Frontend Masters", date: "2024" },
       { title: "AWS Solutions Architect Associate", issuer: "Amazon", date: "2023" },
     ],
-    social: { github: "BENSAOULALoubna", linkedin: "Loubna (Student) Bensaoula", email: "loubna.bensaoula@ensia.edu.dz" },
+    social: { github: "https://github.com/BENSAOULALoubna", linkedin: "https://www.linkedin.com/in/loubna-student-bensaoula-209056305/", email: "loubna.bensaoula@ensia.edu.dz" },
   },
 }
 
